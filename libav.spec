@@ -1,7 +1,7 @@
 Summary:	Complete solution to record, convert and stream audio and video
 Name:		libav
 Version:	0.8.5
-Release:	1
+Release:	2
 License:	GPL v3
 Group:		Libraries
 Source0:	http://libav.org/releases/%{name}-%{version}.tar.xz
