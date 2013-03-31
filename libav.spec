@@ -1,11 +1,11 @@
 Summary:	Complete solution to record, convert and stream audio and video
 Name:		libav
-Version:	0.8.5
+Version:	9.4
 Release:	2
 License:	GPL v3
 Group:		Libraries
 Source0:	http://libav.org/releases/%{name}-%{version}.tar.xz
-# Source0-md5:	3f0fd111575e91c8d57bd8b4d5e3802a
+# Source0-md5:	3e31b80744022d00af05f638db38e83f
 URL:		http://libav.org
 BuildRequires:	SDL-devel
 BuildRequires:	flac-devel
@@ -84,7 +84,6 @@ Utilities for converting video and audio.
 	--enable-libvpx			\
 	--enable-libx264		\
 	--enable-libxvid		\
-	--enable-postproc		\
 	--enable-pthreads		\
 	--enable-runtime-cpudetect	\
 	--enable-shared			\
@@ -111,15 +110,15 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %ghost %{_libdir}/libavdevice.so.??
 %attr(755,root,root) %ghost %{_libdir}/libavfilter.so.?
 %attr(755,root,root) %ghost %{_libdir}/libavformat.so.??
+%attr(755,root,root) %ghost %{_libdir}/libavresample.so.?
 %attr(755,root,root) %ghost %{_libdir}/libavutil.so.??
-%attr(755,root,root) %ghost %{_libdir}/libpostproc.so.??
 %attr(755,root,root) %ghost %{_libdir}/libswscale.so.?
 %attr(755,root,root) %{_libdir}/libavcodec.so.*.*.*
 %attr(755,root,root) %{_libdir}/libavdevice.so.*.*.*
 %attr(755,root,root) %{_libdir}/libavfilter.so.*.*.*
 %attr(755,root,root) %{_libdir}/libavformat.so.*.*.*
+%attr(755,root,root) %{_libdir}/libavresample.so.*.*.*
 %attr(755,root,root) %{_libdir}/libavutil.so.*.*.*
-%attr(755,root,root) %{_libdir}/libpostproc.so.*.*.*
 %attr(755,root,root) %{_libdir}/libswscale.so.*.*.*
 
 %files devel
@@ -129,15 +128,15 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libavdevice.so
 %attr(755,root,root) %{_libdir}/libavfilter.so
 %attr(755,root,root) %{_libdir}/libavformat.so
+%attr(755,root,root) %{_libdir}/libavresample.so
 %attr(755,root,root) %{_libdir}/libavutil.so
-%attr(755,root,root) %{_libdir}/libpostproc.so
 %attr(755,root,root) %{_libdir}/libswscale.so
 %{_includedir}/libavcodec
 %{_includedir}/libavdevice
 %{_includedir}/libavfilter
 %{_includedir}/libavformat
+%{_includedir}/libavresample
 %{_includedir}/libavutil
-%{_includedir}/libpostproc
 %{_includedir}/libswscale
 %{_pkgconfigdir}/*.pc
 
