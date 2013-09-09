@@ -1,11 +1,11 @@
 Summary:	Complete solution to record, convert and stream audio and video
 Name:		libav
-Version:	9.8
+Version:	9.9
 Release:	1
 License:	GPL v3
 Group:		Libraries
 Source0:	http://libav.org/releases/%{name}-%{version}.tar.xz
-# Source0-md5:	111e9de1aecf4c8269a08453ac671c02
+# Source0-md5:	c4a1a2fa2491f341903822e9083e5b41
 URL:		http://libav.org
 BuildRequires:	SDL-devel
 BuildRequires:	flac-devel
